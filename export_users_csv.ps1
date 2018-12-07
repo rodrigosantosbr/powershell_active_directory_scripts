@@ -1,0 +1,1 @@
+Get-ADUser -Filter * -Properties * | Select -Property EmailAddress,GivenName,Surname,DisplayName,Title,Department,Office,OfficePhone,MobilePhone,Fax,StreetAddress,City,State,PostalCode,Country | Export-CSV "C:\\ad_reports\ADusers.csv" -NoTypeInformation -Encoding UTF8
